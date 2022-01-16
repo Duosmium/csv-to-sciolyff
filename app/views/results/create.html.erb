@@ -1,0 +1,6 @@
+<h1>CSV to SciolyFF</h1>
+<%= form_with url: '/download', multipart: true do |form| %>
+  <%= form.file_field :csv %>
+  <br>
+  <%= form.submit "Convert" %>
+<% end %>
